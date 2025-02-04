@@ -33,9 +33,9 @@ def get_opt():
     parser.add_argument('--cuda',default=False, help='cuda or cpu')
 
     parser.add_argument('--test_name', type=str, default='test', help='test name')
-    parser.add_argument("--dataroot", default="./data/zalando-hd-resize")
+    parser.add_argument("--dataroot", default="/kaggle/working/data/")
     parser.add_argument("--datamode", default="test")
-    parser.add_argument("--data_list", default="test_pairs.txt")
+    parser.add_argument("--data_list", default="pairs.txt")
     parser.add_argument("--output_dir", type=str, default="./Output")
     parser.add_argument("--datasetting", default="unpaired")
     parser.add_argument("--fine_width", type=int, default=768)
